@@ -1,6 +1,7 @@
 package pe.edu.idat.controller;
 
 import java.util.List;
+
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -39,6 +40,10 @@ public class UsuarioController {
 		
 		return lista;
 	}
+	/*@GetMapping("/listar")
+	public List<UsuarioEntity> listar(){
+		return service.listarUsuarios();
+	}*/
 	
 	@GetMapping("/encontrar/{id}")
 	@ResponseBody

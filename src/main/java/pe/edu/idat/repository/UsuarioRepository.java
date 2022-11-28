@@ -18,8 +18,4 @@ public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Integer>
 	@Query(value = "select * from usuario u where u.usuario = ?1 and u.password = ?2", nativeQuery = true)
 	Optional<UsuarioEntity> findByNombreUsuarioAndContraseniaUsuario(@Param("usuario") String usuario, @Param("password") String password);
 	
-
-	
-	
-
 }

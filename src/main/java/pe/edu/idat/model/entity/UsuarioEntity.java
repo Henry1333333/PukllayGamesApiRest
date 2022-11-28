@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -38,7 +40,7 @@ public class UsuarioEntity implements Serializable{
 	private Integer idusuario;
 	
 	@Column(name = "usuario")
-	private String nomUsuario;
+	private String usuario;
 	
 	@Column(name = "correo")
 	private String correo;
